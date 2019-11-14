@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin:0px;
+}
+
+header {
+    height:600px;
+    width: 667px;
+    background-image: url(background4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity:0.8;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.link-icons {
+    display:flex;
+    justify-content: flex-end;
+    margin: 110px 40px 0 0;
+}
+ 
+.link-icons img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: auto;
+    height: 40px;
+    padding:10px;
+    margin: 5px;
+}
+
+.header-text-box {
+    height:300px;
+    width:667px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin:0px;
+}
+
+h1 {
+    margin: 5px 20px 5px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size:40px;
+}
+
+h4 {
+    margin: 5px 20px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size:25px;
+}
+
+h6 {
+    margin: 20px 20px 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size:15px;
+}
+
+.my-picture {
+    position: absolute;
+    left: 420px;
+    top: 500px;
+    border-radius:50%;
+    height: auto;
+    width: 170px;
+    border:2px solid white; 
+}
+
+.introduction-box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:440px;
+    width:667px;
+    background-color: #F4F4F4;
+}
+
+.text-box1{
+    width: 500px;
+    height: 270px;
+    text-align: left;
+    letter-spacing:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    color: black;
+    opacity: 1;
+    margin: 20px 0;
+}
+
+p {
+    margin:0px;
+}
+
+.skills-box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:440px;
+    width:667px;
+    background-color:white;
+}
+
+.text-box2{
+    width: 500px;
+    height: 270px;
+    text-align: center;
+    letter-spacing:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    color: black;
+    opacity: 1;
+    margin: 20px 0;
+}
+
+h5 {
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    background-color: red;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight: bold;
+    margin:10px;
+}
+
+.projects-box {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:440px;
+    width:667px;
+    background-color: #F4F4F4;
+}
+
+.projects-header {
+    height: 40px;
+    width: 340px;
+    padding: 10px;
+    background-color: red;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight: bold;
+    margin:10px;
+}
+
+.weather-app-box {
+    width:500px;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.weather-app-img {
+    height:200px;
+    width:500px;
+    background-image: url(myweatherapp.png);
+    object-fit:cover;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app-info {
+    height:100px;
+    width:500px;
+    margin: 20px 0 0 0;
+    font-family:  'Roboto', sans-serif;
+    font-size:25px;
+}
+
+#weather {
+    color:red;
+    font-weight:bold;
+}
+
+h2 {
+    color:white;
+    font-weight:bold;
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 1;
+}
+
+footer {
+    height:100px;
+    width:667px;
+}
