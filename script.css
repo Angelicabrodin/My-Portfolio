@@ -1,6 +1,4 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin:0px;
 }
@@ -96,10 +94,6 @@ h6 {
     margin: 20px 0;
 }
 
-p {
-    margin:0px;
-}
-
 .skills-box {
     display:flex;
     justify-content: center;
@@ -123,11 +117,10 @@ p {
 }
 
 h5 {
-    height: 40px;
-    width: 80px;
+    width: fit-content;
     padding: 10px;
     background-color: red;
-    font-size: 30px;
+    font-size: 27px;
     font-family: 'Montserrat', sans-serif;
     color:white;
     font-weight: bold;
@@ -139,26 +132,24 @@ h5 {
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    height:440px;
+    height:1100px;
     width:667px;
     background-color: #F4F4F4;
 }
 
-.projects-header {
-    height: 40px;
-    width: 340px;
-    padding: 10px;
-    background-color: red;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-    font-weight: bold;
-    margin:10px;
+a:link {
+color:red;
+text-decoration: none;
+}
+
+a:visited {
+    color:red;
+    text-decoration: none;
 }
 
 .weather-app-box {
     width:500px;
-    height:300px;
+    height:auto;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -178,11 +169,17 @@ h5 {
 }
 
 .weather-app-info {
+    display: flex;
+    flex-direction:column;
     height:100px;
     width:500px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 5px 0;
     font-family:  'Roboto', sans-serif;
     font-size:25px;
+}
+
+p {
+    margin:10px 0;
 }
 
 #weather {
@@ -197,6 +194,81 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     opacity: 1;
 }
+
+.skills-container {
+    display:flex;
+    flex-direction: row;
+}
+
+.html {
+    background-color: #FDDFE7;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    color:black;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+    letter-spacing: 0;
+}
+
+h3 {
+    width: fit-content;
+    padding: 10px;
+    font-size: 30px;
+    color:red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin:25px 0;
+}
+
+.thoughts-box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:1100px;
+    width:667px;
+    background-color:white;
+}
+
+.thoughts-img {
+height:200px;
+width:500px;
+background-image: url(comfort.jpeg);
+object-fit:cover;
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content: center;
+align-items: center;
+margin:20px 0;
+}
+
+.thoughts-info {
+    display: flex;
+    flex-wrap: wrap;
+    height:500px;
+    width:500px;
+    margin: 20px 0;
+    font-family:  'Roboto', sans-serif;
+    font-size:25px;
+    letter-spacing:0;
+}
+
+.date-text {
+    color:red;
+    margin:5px 0;
+}
+
+.thoughts-header {
+    font-weight:bold;
+    margin:5px 0;
+}
+
+.thoughts-text {
+    margin:5px;
+}
+
 
 footer {
     height:100px;
