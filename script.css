@@ -1,11 +1,14 @@
 body {
     box-sizing: border-box;
     margin:0px;
+    width:100%;
 }
+
+/* HEADER */
 
 header {
     height:600px;
-    width: 667px;
+    width:auto;
     background-image: url(background4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,6 +31,7 @@ header {
     height: 40px;
     padding:10px;
     margin: 5px;
+    object-fit: cover;
 }
 
 .header-text-box {
@@ -73,16 +77,27 @@ h6 {
     border:2px solid white; 
 }
 
-.introduction-box {
+/* END OF HEADER */
+
+.container-color{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:440px;
-    width:667px;
+    flex-direction:column;
+    width:100%;
     background-color: #F4F4F4;
 }
 
-.text-box1{
+.container-white {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    background-color:white;
+}
+
+.text-box-introduction{
     width: 500px;
     height: 270px;
     text-align: left;
@@ -91,20 +106,10 @@ h6 {
     font-size:20px;
     color: black;
     opacity: 1;
-    margin: 20px 0;
+    margin: 80px 0 0 0;
 }
 
-.skills-box {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height:440px;
-    width:667px;
-    background-color:white;
-}
-
-.text-box2{
+.text-box-skills{
     width: 500px;
     height: 270px;
     text-align: center;
@@ -119,7 +124,7 @@ h6 {
 h5 {
     width: fit-content;
     padding: 10px;
-    background-color: red;
+    background-color:#637169;
     font-size: 27px;
     font-family: 'Montserrat', sans-serif;
     color:white;
@@ -127,37 +132,26 @@ h5 {
     margin:10px;
 }
 
-.projects-box {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    height:1100px;
-    width:667px;
-    background-color: #F4F4F4;
-}
-
 a:link {
-color:red;
-text-decoration: none;
+    color:#637169;
+    text-decoration: none;
 }
-
+    
 a:visited {
-    color:red;
+    color:#637169;
     text-decoration: none;
 }
 
-.weather-app-box {
+.project-box {
     width:500px;
     height:auto;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction:column;
 }
 
 .weather-app-img {
-    height:200px;
     width:500px;
     background-image: url(myweatherapp.png);
     object-fit:cover;
@@ -168,40 +162,40 @@ a:visited {
     align-items: center;
 }
 
-.weather-app-info {
-    display: flex;
-    flex-direction:column;
-    height:100px;
-    width:500px;
-    margin: 20px 0 5px 0;
-    font-family:  'Roboto', sans-serif;
-    font-size:25px;
-}
+/* SHOULD BE ON TOP OF PROJECT IMG */
 
-p {
-    margin:10px 0;
-}
-
-#weather {
-    color:red;
-    font-weight:bold;
-}
-
-h2 {
+/*h2 {
     color:white;
     font-weight:bold;
     font-size:25px;
     font-family: 'Montserrat', sans-serif;
     opacity: 1;
+}*/
+
+.article-snippet {
+    display: flex;
+    flex-direction:column;
+    width:500px;
+    margin: 20px 0 5px 0;
+    font-family:'Roboto', sans-serif;
+    font-size:25px;
+}
+
+#project-header {
+    color:#637169;
+    font-weight:bold;
 }
 
 .skills-container {
     display:flex;
     flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+    margin:10px 0;
 }
 
-.html {
-    background-color: #FDDFE7;
+.skills-square {
+    background-color: #9b6b60;
     font-family: 'Roboto', sans-serif;
     font-size:15px;
     color:black;
@@ -215,62 +209,123 @@ h3 {
     width: fit-content;
     padding: 10px;
     font-size: 30px;
-    color:red;
+    color:#637169;
+    align-self: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin:25px 0;
 }
 
-.thoughts-box {
+.thoughts-img {
+    width:500px;
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height:1100px;
-    width:667px;
-    background-color:white;
+    margin:20px 0;
 }
 
-.thoughts-img {
-height:200px;
-width:500px;
-background-image: url(comfort.jpeg);
-object-fit:cover;
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content: center;
-align-items: center;
-margin:20px 0;
-}
-
-.thoughts-info {
+.thoughts-article {
     display: flex;
     flex-wrap: wrap;
-    height:500px;
     width:500px;
     margin: 20px 0;
-    font-family:  'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:25px;
     letter-spacing:0;
 }
 
-.date-text {
-    color:red;
+#date-text {
+    color:#637169;
     margin:5px 0;
 }
 
-.thoughts-header {
+#thoughts-header {
     font-weight:bold;
+    margin:5px 0 7px 0;
+}
+
+.container-skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row;
+    width:500px;
+    font-family:'Roboto', sans-serif;
+    font-size:25px;
+}
+
+.skill-box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:200px;
+    height:400px;
+}
+
+.skill-box-header {
+    color:#637169;
     margin:5px 0;
+    font-weight:bold;
 }
 
-.thoughts-text {
-    margin:5px;
+p {
+ margin:5px;
 }
 
+.social-container {
+    display:flex;
+    align-items: center;
+    margin:20px;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    color:red;
+    width:600px;
+}
+
+.social-icon {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    color:red;
+}
+
+.social-icon img {
+    border: 2px solid red;
+    border-radius: 50%;
+    width: auto;
+    height: 45px;
+    padding:10px;
+    margin: 5px;
+    object-fit: cover;
+}
 
 footer {
-    height:100px;
-    width:667px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width:100%;
+    background-color:#637169;
+    height:300px;
+}
+
+.footer-header {
+    color:white;
+}
+
+.footer-text {
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
 }
