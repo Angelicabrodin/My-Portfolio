@@ -13,13 +13,12 @@ header {
     opacity:0.8;
     display:flex;
     flex-direction: column;
-    align-items: flex-end;
 }
 
 .link-icons {
     display:flex;
     justify-content: flex-end;
-    margin: 110px 40px 0 0;
+    margin: 120px 20px 0 0;
 }
  
 .link-icons img {
@@ -34,12 +33,12 @@ header {
 
 .header-text-box {
     height:300px;
-    width:100%;
+    width:320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin:0px;
+    margin: 10px 0;
 }
 
 h1 {
@@ -47,7 +46,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color:white;
-    font-size:40px;
+    font-size:35px;
 }
 
 h4 {
@@ -55,7 +54,7 @@ h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color:white;
-    font-size:25px;
+    font-size:22px;
 }
 
 h6 {
@@ -67,8 +66,8 @@ h6 {
 
 .my-picture {
     position: absolute;
-    left: 420px;
-    top: 500px;
+    left: 170px;
+    top: 470px;
     border-radius:50%;
     height: auto;
     width: 170px;
@@ -94,7 +93,7 @@ h6 {
 }
 
 .text-box-introduction{
-    width: 500px;
+    width: 320px;
     height: 270px;
     text-align: left;
     letter-spacing:0;
@@ -102,11 +101,11 @@ h6 {
     font-size:20px;
     color: black;
     opacity: 1;
-    margin: 80px 0 0 0;
+    margin: 60px 0 0 0;
 }
 
 .text-box-skills{
-    width: 500px;
+    width: 320px;
     height: 270px;
     text-align: center;
     letter-spacing:0;
@@ -121,7 +120,7 @@ h5 {
     width: fit-content;
     padding: 10px;
     background-color:#637169;
-    font-size: 27px;
+    font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     color:white;
     font-weight: bold;
@@ -139,7 +138,7 @@ a:visited {
 }
 
 .project-box {
-    width:500px;
+    width:320px;
     height:auto;
     display:flex;
     justify-content: center;
@@ -148,7 +147,7 @@ a:visited {
 }
 
 .weather-app-img {
-    width:500px;
+    width:320px;
     background-image: url(myweatherapp.png);
     object-fit:cover;
     background-size:cover;
@@ -158,23 +157,13 @@ a:visited {
     align-items: center;
 }
 
-/* SHOULD BE ON TOP OF PROJECT IMG */
-
-/*h2 {
-    color:white;
-    font-weight:bold;
-    font-size:25px;
-    font-family: 'Montserrat', sans-serif;
-    opacity: 1;
-}*/
-
 .article-snippet {
     display: flex;
     flex-direction:column;
-    width:500px;
+    width:320px;
     margin: 20px 0 5px 0;
     font-family:'Roboto', sans-serif;
-    font-size:25px;
+    font-size:22px;
 }
 
 #project-header {
@@ -204,7 +193,7 @@ a:visited {
 h3 {
     width: fit-content;
     padding: 10px;
-    font-size: 30px;
+    font-size: 22px;
     color:#637169;
     align-self: center;
     font-family: 'Montserrat', sans-serif;
@@ -213,7 +202,7 @@ h3 {
 }
 
 .thoughts-img {
-    width:500px;
+    width:320px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -223,10 +212,10 @@ h3 {
 .thoughts-article {
     display: flex;
     flex-wrap: wrap;
-    width:500px;
+    width:320px;
     margin: 20px 0;
     font-family: 'Roboto', sans-serif;
-    font-size:25px;
+    font-size:20px;
     letter-spacing:0;
 }
 
@@ -243,12 +232,11 @@ h3 {
 .container-skills{
     display:flex;
     flex-wrap:wrap;
-    /*justify-content: space-between;*/
     align-items: center;
     flex-direction:row;
-    width:375px;
+    width:320px;
     font-family:'Roboto', sans-serif;
-    font-size:25px;
+    font-size:20px;
 }
 
 .skill-box {
@@ -256,7 +244,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     width:150px;
-    height:400px;
+    height:350px;
 }
 
 .skill-box-header {
@@ -272,13 +260,13 @@ p {
 .social-container {
     display:flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 20px;
     padding: 0;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-    font-size:20px;
+    font-size:15px;
     color:red;
-    width:375px;
+    width:320px;
 }
 
 .social-icon {
@@ -286,13 +274,12 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:20px;
+    margin:10px;
     width: 100px;
     height: 100px;
     padding: 0;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-    font-size:20px;
     color:red;
 }
 
@@ -311,7 +298,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    /*width:100%;*/
     background-color:#637169;
     height:300px;
 }
@@ -323,5 +309,23 @@ footer {
 .footer-text {
     color:white;
     font-family: 'Roboto', sans-serif;
-    font-size:25px;
+    font-size:20px;
 }
+
+@media (min-width: 665px) {
+    .my-picture {
+        position: absolute;
+        left: 420px;
+        top: 500px;
+        border-radius:50%;
+        height: auto;
+        width: 170px;
+        border:2px solid white; 
+    }
+    }
+
+/** DESKTOP **/
+
+@media (min-width: 1024px){
+
+    }
