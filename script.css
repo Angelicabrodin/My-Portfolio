@@ -25,7 +25,7 @@ header {
     border: 2px solid white;
     border-radius: 50%;
     width: auto;
-    height: 40px;
+    height: 30px;
     padding:10px;
     margin: 5px;
     object-fit: cover;
@@ -312,20 +312,117 @@ footer {
     font-size:20px;
 }
 
+/** MEDIA QUERIES **/
+
+/** TABLET **/
+
 @media (min-width: 665px) {
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
     .my-picture {
-        position: absolute;
         left: 420px;
         top: 500px;
-        border-radius:50%;
-        height: auto;
-        width: 170px;
-        border:2px solid white; 
     }
+    .text-box-introduction {
+        width: 500px;
+        margin: 80px 0 0 0;
     }
+
+    .header-text-box, .text-box-skills, .project-box, .weather-app-img, .article-snippet,
+    .thoughts-img, .thoughts-article {
+        width: 500px;
+    }
+    
+    .container-skills {
+        width: 500px;
+        justify-content: center;
+    }
+
+    .skill-box, .social-icon {
+        width:200px;
+    }
+
+    .social-container {
+        width:500px;
+        justify-content: center;
+    }
+}
 
 /** DESKTOP **/
 
 @media (min-width: 1024px){
+    header{
+        height:400px;
+    }
+    
+    .header-text-box {
+        margin: 0 20px 20px 90px;
+    }
+
+    .link-icons {
+        margin: 80px 50px 0 0;
+    }
+
+    .my-picture {
+        left: 780px;
+        top: 280px;
+    }
+
+    .project-box {
+        width:800px;
+    }
+
+    .weather-app-img {
+        width:250px;
+    }
+
+    .thoughts-img {
+        width:250px;
+    }
+
+    .project-box3 .article-snippet {
+        width:250px;
+    }
+
+   .thoughts-article {
+        width:250px;
+        font-size:15px;
+    }
+
+    .project-box2 {
+        width:800px;
+        height:auto;
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+
+    .container-color .skills-container {
+        align-items: end;
+    }
+
+    .project-box3 {
+        margin:20px;
+    }
+
+    .other-project-box {
+        width:500px
+    }
+
+    .container-skills {
+        width:800px;
+        font-size: 18px;
+    }
 
     }
