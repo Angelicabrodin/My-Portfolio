@@ -52,7 +52,7 @@ h1 {
     font-size:35px;
 }
 
-h4 {
+h2 {
     margin: 5px 20px 20px 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -330,7 +330,7 @@ footer {
         font-size: 18px;
     }
 
-    h4 {
+    h2, h4 {
         font-size: 25px;
     }
 
