@@ -10,7 +10,7 @@ header {
     background-image: url(background4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity:0.8;
+    /* opacity:0.8; */
     display:flex;
     flex-direction: column;
 }
@@ -149,15 +149,14 @@ a:visited {
     flex-direction:column;
 }
 
-.weather-app-img {
-    width:320px;
-    background-image: url(myweatherapp.png);
-    object-fit:cover;
-    background-size:cover;
-    background-position:center;
-    display:flex;
+.project-img-box {
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.project-img {
+    width:320px;
 }
 
 .article-snippet {
@@ -347,7 +346,7 @@ footer {
         margin: 80px 0 0 0;
     }
 
-    .header-text-box, .text-box-skills, .project-box, .weather-app-img, .article-snippet,
+    .header-text-box, .text-box-skills, .project-box, .project-img, .article-snippet,
     .thoughts-img, .thoughts-article {
         width: 500px;
     }
@@ -391,7 +390,7 @@ footer {
         width:800px;
     }
 
-    .weather-app-img {
+    .project-img {
         width:250px;
     }
 
